@@ -72,5 +72,4 @@ Open `Stat_Weightings.xlsx` and edit the weighting values in any of the four cat
 Built with assistance from [Claude](https://claude.ai) (Anthropic). The stat selection, weightings, position logic, and overall design decisions were made by the author — Claude was used as a coding and reasoning tool throughout the development process.
 
 ## Example Output
-
 ![Example Output](Example%20of%20Analysed%20Squad.png)
