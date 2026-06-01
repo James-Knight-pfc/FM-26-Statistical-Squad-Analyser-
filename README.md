@@ -48,7 +48,6 @@ pip install pandas numpy openpyxl
 Squad_Stats_Analysis.py
 Stat_Weightings.xlsx
 player_export.csv
-Stats.fmf
 ```
 
 ### Run
@@ -66,6 +65,7 @@ Open `Stat_Weightings.xlsx` and edit the weighting values in any of the four cat
 - Players must have played more than 5% of the squad's maximum minutes to be included — this filters out players with too small a sample size
 - `xG/90` is computed from the raw `xG` export column divided by minutes played
 - Goalkeepers are excluded from the outfield ratings
+- Squad view required for upload included in the repository as stats.fmf
 
 ## Development
 
