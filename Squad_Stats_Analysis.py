@@ -61,7 +61,7 @@ def parse_apps(val) -> int:
         return 0
  
  
-def clean_df(df: pd.DataFrame) -> pd.DataFrame:
+def clean_df(df: pd.DataFrame) -> tuple:
     df = df.copy()
     df.columns = df.columns.str.strip()
  
