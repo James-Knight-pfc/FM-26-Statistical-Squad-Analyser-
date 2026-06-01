@@ -73,4 +73,4 @@ Built with assistance from [Claude](https://claude.ai) (Anthropic). The stat sel
 
 ## Example Output
 
-(Example%20of%20Analysed%20Squad.png)
+![Example Output](Example%20of%20Analysed%20Squad.png)
