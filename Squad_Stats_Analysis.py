@@ -202,7 +202,7 @@ DIVIDER = f"  {'-'*90}"
  
 print(f"\n{'='*94}")
 print(f"  PLAYER RATINGS  —  min. {min_threshold:.0f} mins played  ({max_mins:.0f} max in squad)")
-print(f"  Scores: 10 = best in squad, 5 = squad average")
+print(f"  Scores: 10 = best in squad, 0 = worst")
 print(f"{'='*94}")
  
 for group, label in [
