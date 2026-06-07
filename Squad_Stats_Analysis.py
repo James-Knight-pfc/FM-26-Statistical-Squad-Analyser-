@@ -125,20 +125,18 @@ def pct_score(series: pd.Series) -> pd.Series:
  
  
 def score_category(df: pd.DataFrame, weights: dict[str, float]) -> pd.Series:
-    """
-    Compute a weighted percentile score for a category.
-    Positive weights: higher stat = better.
-    Negative weights: higher stat = worse (percentile is inverted).
-    """
     score = pd.Series(0.0, index=df.index)
+    total_weight = 0.0
     for stat, weight in weights.items():
         if stat not in df.columns:
             continue
         if weight > 0:
             score += pct_score(df[stat]) * weight
         else:
-            # Invert: more of this stat is bad, so flip the percentile
             score += (10 - pct_score(df[stat])) * abs(weight)
+        total_weight += abs(weight)
+    if total_weight > 0:
+        score = score / total_weight
     return score
  
  
